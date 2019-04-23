@@ -4,8 +4,8 @@ app = Flask(__name__)
 def index():
     return render_template('Signup//Signin.html')
 
-@app.route("/in")
-def in():
+@app.route("/index2")
+def index2():
     return render_template('Index.html')
 
 
