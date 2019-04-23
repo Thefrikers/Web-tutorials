@@ -425,7 +425,7 @@ a.article:hover {
     });
     function logout(){
         firebase.auth().signOut().then(function() {
-            window.location.assign("{{url_for('/')}}");
+            window.location.assign("{{url_for('index')}}");
         }).catch(function(error) {
             console.log(error);
         });
