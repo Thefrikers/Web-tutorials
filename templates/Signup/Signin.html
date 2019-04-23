@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web tutorials</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="signup.js"></script>
+    <style>
+        body, html {
+            font-size: 40px;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.01);
+            height: 100%;
+            margin:0px;
+            padding:0px;
+            line-height:20px;
+            background: -webkit-linear-gradient(90deg, #614385 10%, #516395 90%); /* Chrome 10+, Saf5.1+ */
+            background:    -moz-linear-gradient(90deg, #614385 10%, #516395 90%); /* FF3.6+ */
+            background:     -ms-linear-gradient(90deg, #614385 10%, #516395 90%); /* IE10 */
+            background:      -o-linear-gradient(90deg, #614385 10%, #516395 90%); /* Opera 11.10+ */
+            background:         linear-gradient(90deg, #614385 10%, #516395 90%); /* W3C */
+
+        }
+        .simplebox, .simplebutton {
+            outline: none;
+            border: 1px solid #ddd !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+            font-size:12px;
+        }
+
+        .container {
+            position:relative;
+            top:50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .formHolder {
+            width:300px;
+            margin:0 auto;
+            background:rgba(255,255,255,1);
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            overflow:hidden;
+            padding:30px;
+            box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+
+        }
+
+        .formHolder h3 {
+            margin:0 0 14px 0;
+            font-size:19px;
+            font-weight:600;
+        }
+
+        .signUp {
+            display:none;
+        }
+
+        .login .loginButton {
+            margin-right:5px;
+        }
+
+        .signup .loginButton {
+            margin-left:5px;
+        }
+
+        .nav a {
+            color:#fff;
+            text-decoration:none;
+            display:inline-block;
+            border:2px solid rgba(255,255,255,0.6);
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            padding:10px 15px 10px 15px;
+            letter-spacing:-0.5px;
+        }
+
+        .nav span {
+            font-style:italic;
+            display:inline-block;
+            margin:0 5px 0 5px;
+            font-size:14px;
+            color:#eee;
+        }
+
+        .signup {
+            display:none;
+        }
+
+        .page-transition {
+            width:20px;
+            height:20px;
+            background:#fff;
+            position:fixed;
+            top:50%;
+            margin-top:-10px;
+            left:50%;
+            z-index:10000;
+            margin-left:-10px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            display:none;
+        }
+
+    </style>
+    <script src="signup.js"></script>
+
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+<body translate="no">
+<div class="page-transition"></div>
+
+<div class="container">
+    <h2 style="color: white;font-size: 50px;padding-bottom:2% " align="center">WEB TUTORIALS</h2>
+    <div class="formHolder login">
+        <h3>Login</h3>
+        <div class="form-group">
+            <input type="text" class="form-control simplebox" id="login" placeholder="E-mail or Login">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control simplebox" id="password" placeholder="Password">
+        </div>
+        <button onclick="login()" type="submit" id="loginButton" class="btn btn-sm btn-default simplebutton loginButton">Login</button><a href="signup.html" class="btn btn-sm btn-link loginButton" id="showLogin">Don't have an account?</a>
+    </div>
+    <div class="formHolder signUp">
+    </div>
+</div>
+<script type="text/javascript">
+    function login() {
+        var email = document.getElementById("login").value;
+        var password = document.getElementById("password").value;
+        firebase.auth().signInWithEmailAndPassword(email, password)
+            .then(function(firebaseUser) {
+                // console.log("Success");
+                window.location.assign("../Index.html");
+            })
+            .catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                console.log(errorCode, errorMessage);
+        });
+    }
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCnF81fX36oy6h5qSCODCFHIGjuaUOf7JI",
+        authDomain: "web-tutorial-57d40.firebaseapp.com",
+        databaseURL: "https://web-tutorial-57d40.firebaseio.com",
+        projectId: "web-tutorial-57d40",
+        storageBucket: "web-tutorial-57d40.appspot.com",
+        messagingSenderId: "1009743796658"
+    };
+    firebase.initializeApp(config);
+</script>
+
+</body>
+</html>

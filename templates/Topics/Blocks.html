@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks</title>
+    <style>
+        html{
+            font-family: DialogInput;
+            font-size: 15px;
+        }
+        .code{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="color:#7386D5;">HTML Block and Inline Elements</h1>
+<hr>
+<p class="intro">Every HTML element has a default display value depending on what type
+    of element it is. The default display value for most elements is block or inline.</p>
+<h2>Block-level Elements</h2>
+<p>A block-level element always starts on a new line and takes up the full width available
+    (stretches out to the left and right as far as it can).</p>
+<div class="w3-theme-border" style="border-width:1px;border-style:solid;padding:5px;">
+    The &lt;div&gt; element is a block-level element.</div>
+<div class="code">
+    <h3>Example</h3>
+    <div class="w3-code notranslate htmlHigh">
+        &lt;div&gt;Hello&lt;/div&gt;<br>&lt;div&gt;World&lt;/div&gt;</div>
+</div>
+
+<p>Block level elements in HTML:</p>
+<div class="w3-row htmlHigh" style="line-height:25px;font-family:Consolas,'Courier New', Courier, monospace;xfont-size:16px;">
+    <div class="mylist">&lt;address&gt;</div>
+    <div class="mylist">&lt;article&gt;</div>
+    <div class="mylist">&lt;aside&gt;</div>
+    <div class="mylist">&lt;blockquote&gt;</div>
+    <div class="mylist">&lt;canvas&gt;</div>
+    <div class="mylist">&lt;dd&gt;</div>
+    <div class="mylist">&lt;div&gt;</div>
+    <div class="mylist">&lt;dl&gt;</div>
+    <div class="mylist">&lt;dt&gt;</div>
+    <div class="mylist">&lt;fieldset&gt;</div>
+    <div class="mylist">&lt;figcaption&gt;</div>
+    <div class="mylist">&lt;figure&gt;</div>
+    <div class="mylist">&lt;footer&gt;</div>
+    <div class="mylist">&lt;form&gt;</div>
+    <div class="mylist">&lt;h1&gt;-&lt;h6&gt;</div>
+    <div class="mylist">&lt;header&gt;</div>
+    <div class="mylist">&lt;hr&gt;</div>
+    <div class="mylist">&lt;li&gt;</div>
+    <div class="mylist">&lt;main&gt;</div>
+    <div class="mylist">&lt;nav&gt;</div>
+    <div class="mylist">&lt;noscript&gt;</div>
+    <div class="mylist">&lt;ol&gt;</div>
+    <div class="mylist">&lt;p&gt;</div>
+    <div class="mylist">&lt;pre&gt;</div>
+    <div class="mylist">&lt;section&gt;</div>
+    <div class="mylist">&lt;table&gt;</div>
+    <div class="mylist">&lt;tfoot&gt;</div>
+    <div class="mylist">&lt;ul&gt;</div>
+    <div class="mylist">&lt;video&gt;</div>
+</div>
+
+<hr>
+
+<h2>Inline Elements</h2>
+<p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+<p>This is <span class="w3-theme-border" style="border-width:1px;border-style:solid;padding:5px">an inline &lt;span&gt; element 
+inside</span> a paragraph.</p>
+<div class="code">
+    <h3>Example</h3>
+    <div class="w3-code notranslate htmlHigh">
+        &lt;span&gt;Hello&lt;/span&gt;<br>&lt;span&gt;World&lt;/span&gt;</div>
+</div>
+
+<p>Inline elements in HTML:</p>
+<div class="w3-row htmlHigh" style="line-height:25px;font-family:Consolas,'Courier New', Courier, monospace;xfont-size:16px;">
+
+    <div class="mylist">&lt;a&gt;</div>
+    <div class="mylist">&lt;abbr&gt;</div>
+    <div class="mylist">&lt;acronym&gt;</div>
+    <div class="mylist">&lt;b&gt;</div>
+    <div class="mylist">&lt;bdo&gt;</div>
+    <div class="mylist">&lt;big&gt;</div>
+    <div class="mylist">&lt;br&gt;</div>
+    <div class="mylist">&lt;button&gt;</div>
+    <div class="mylist">&lt;cite&gt;</div>
+    <div class="mylist">&lt;code&gt;</div>
+    <div class="mylist">&lt;dfn&gt;</div>
+    <div class="mylist">&lt;em&gt;</div>
+    <div class="mylist">&lt;i&gt;</div>
+    <div class="mylist">&lt;img&gt;</div>
+    <div class="mylist">&lt;input&gt;</div>
+    <div class="mylist">&lt;kbd&gt;</div>
+    <div class="mylist">&lt;label&gt;</div>
+    <div class="mylist">&lt;map&gt;</div>
+    <div class="mylist">&lt;object&gt;</div>
+    <div class="mylist">&lt;output&gt;</div>
+    <div class="mylist">&lt;q&gt;</div>
+    <div class="mylist">&lt;samp&gt;</div>
+    <div class="mylist">&lt;script&gt;</div>
+    <div class="mylist">&lt;select&gt;</div>
+    <div class="mylist">&lt;small&gt;</div>
+    <div class="mylist">&lt;span&gt;</div>
+    <div class="mylist">&lt;strong&gt;</div>
+    <div class="mylist">&lt;sub&gt;</div>
+    <div class="mylist">&lt;sup&gt;</div>
+    <div class="mylist">&lt;textarea&gt;</div>
+    <div class="mylist">&lt;time&gt;</div>
+    <div class="mylist">&lt;tt&gt;</div>
+    <div class="mylist">&lt;var&gt;</div>
+    
+</div>
+<hr>
+<h2>The &lt;div&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;div&gt;</code> element is
+    often used as a container for other HTML elements.</p>
+<p>The <code class="w3-codespan">&lt;div&gt;</code> element has no required attributes, but <code class="w3-codespan">style</code>, <code class="w3-codespan">class</code> and <code class="w3-codespan">id</code> are common.</p>
+<p>When used together with CSS, the <code class="w3-codespan">&lt;div&gt;</code> element can be used to style blocks of
+    content:</p>
+<div class="code">
+    <h3>Example</h3>
+    <div class="w3-code notranslate htmlHigh">
+        &lt;div style=&quot;background-color:black;color:white;padding:20px;&quot;&gt;<br>
+        &nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;<br>
+        &lt;/div&gt;
+    </div>
+</div>
+<hr>
+
+<h2>The &lt;span&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;span&gt;</code> element is
+    often used as a container for some text.</p>
+<p>The <code class="w3-codespan">&lt;span&gt;</code> element has no required attributes, but <code class="w3-codespan">style</code>, <code class="w3-codespan">class</code> and <code class="w3-codespan">id</code> are common.</p>
+<p>When used together with CSS, the <code class="w3-codespan">&lt;span&gt;</code> element can be used to style parts of the text:</p>
+<div class="code">
+    <h3>Example</h3>
+    <div class="w3-code notranslate htmlHigh">
+        &lt;h1&gt;My &lt;span style=&quot;color:red&quot;&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;<br>
+    </div>
+</div>
+</body>
+</html>
