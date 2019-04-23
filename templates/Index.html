@@ -279,7 +279,7 @@ a.article:hover {
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-   <head>
+	</head>
 
 <body >
 
@@ -295,7 +295,7 @@ a.article:hover {
 
         <ul class="list-unstyled components">
             <li class="active">
-                <a href="Main.html" target="iframe_a" >
+                <a href="{{url_for('main')}}" target="iframe_a" >
                     <i class="fas fa-home"></i>
                     Home
                 </a>
@@ -309,60 +309,60 @@ a.article:hover {
 
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>
-                        <a href="Topics/Intro.html" target="iframe_a">1. HTML Introduction</a>
+                        <a href="{{url_for('intro')}}" target="iframe_a">1. HTML Introduction</a>
                     </li>
                     <li>
-                        <a href="Topics/Editor.html" target="iframe_a">2. HTML Editors</a>
+                        <a href="{{url_for('editor')}}" target="iframe_a">2. HTML Editors</a>
                     </li>
                     <li>
-                        <a href="Topics/Basics.html" target="iframe_a">3. HTML Basics</a>
+                        <a href="{{url_for('basics')}}" target="iframe_a">3. HTML Basics</a>
                     </li>
                     <li>
-                        <a href="Topics/Elements.html" target="iframe_a" >4. HTML Elements</a>
+                        <a href="{{url_for('elements')}}" target="iframe_a" >4. HTML Elements</a>
                     </li>
                     <li>
-                        <a href="Topics/Attributes.html" target="iframe_a">5. HTML Attributes</a>
+                        <a href="{{url_for('attributes')}}" target="iframe_a">5. HTML Attributes</a>
                     </li>
                     <li>
-                        <a href="Topics/Headings.html" target="iframe_a">6. HTML Headings</a>
+                        <a href="{{url_for('headings')}}" target="iframe_a">6. HTML Headings</a>
                     </li>
                     <li>
-                        <a href="Topics/paragraphs.html" target="iframe_a">7. HTML Paragraphs</a>
+                        <a href="{{url_for('paragraphs')}}" target="iframe_a">7. HTML Paragraphs</a>
                     </li>
                     <li>
-                        <a href="Topics/Style.html" target="iframe_a">8. HTML Styles</a>
+                        <a href="{{url_for('style')}}" target="iframe_a">8. HTML Styles</a>
                     </li>
                     <li>
-                        <a href="Topics/Formatting.html " target="iframe_a">9. HTML Formatting</a>
+                        <a href="{{url_for('formatting')}}" target="iframe_a">9. HTML Formatting</a>
                     </li>
                     <li>
-                        <a href="Topics/Qutation.html" target="iframe_a" style="overflow: hidden;">10. HTML Quations</a>
+                        <a href="{{url_for('quations')}}" target="iframe_a" style="overflow: hidden;">10. HTML Quations</a>
                     </li>
                     <li>
-                        <a href="Topics/Comments.html" target="iframe_a">11. HTML Comments</a>
+                        <a href="{{url_for('comments')}}" target="iframe_a">11. HTML Comments</a>
                     </li>
                     <li>
-                        <a href="Topics/COLORS.html" target="iframe_a">12. HTML Colors</a>
+                        <a href="{{url_for('colors')}}" target="iframe_a">12. HTML Colors</a>
                     </li>
                     <li>
-                        <a href="Topics/Blocks.html" target="iframe_a">13. HTML Blocks</a>
+                        <a href="{{url_for('blocks')}}" target="iframe_a">13. HTML Blocks</a>
                     </li>
                     <li>
-                        <a href="Topics/Id.html" target="iframe_a">14. HTML ID</a>
+                        <a href="{{url_for('ids')}}" target="iframe_a">14. HTML ID</a>
                     </li>
                     <li>
-                        <a href="Topics/Iframe.html" target="iframe_a">15. HTML Iframes</a>
+                        <a href="{{url_for('iframe')}}" target="iframe_a">15. HTML Iframes</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="Topics/Videos.html">
+                <a href="{{url_for('videos')}}">
                     <i class="fas fa-briefcase"></i>
                     Videos
                 </a>
 
 
-                <a href="Topics/Contact.html">
+                <a href="{{url_for('contact')}}">
                     <i class="fas fa-paper-plane"></i>
                     Contact
                 </a>
@@ -390,7 +390,7 @@ a.article:hover {
                </div>
         </nav>
         <div class="Container">
-        <iframe id="test" height= "1500px" width="100%"  overflow="hidden" frameborder="0" src="Main.html" name="iframe_a" ></iframe>
+        <iframe id="test" height= "1500px" width="100%"  overflow="hidden" frameborder="0" src="{{url_for('main')}}" name="iframe_a" ></iframe>
     </div>
 
         </div>
@@ -425,7 +425,7 @@ a.article:hover {
     });
     function logout(){
         firebase.auth().signOut().then(function() {
-            window.location.assign("Signup/Signin.html");
+            window.location.assign("{{url_for('/')}}");
         }).catch(function(error) {
             console.log(error);
         });
