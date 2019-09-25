@@ -1,0 +1,13 @@
+html{
+    font-family: DialogInput;
+    font-size: 15px;
+}
+.heead{
+    color: #7386D5;
+}
+.code{
+    background-color: lightblue;
+}
+.output{
+    background-color: #dddddd;
+}

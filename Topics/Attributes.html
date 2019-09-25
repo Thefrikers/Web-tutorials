@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attributes</title>
+    <style>
+        html{
+            font-family: DialogInput;
+            font-size: 15px;
+        }
+            .heead{
+                    color: #7386D5;;
+            }
+        .back{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+<h1 class="heead">HTML Attributes</span></h1>
+<hr>
+<p><b>Attributes provide additional information about HTML elements</b>.</p>
+
+<h2>HTML Attributes</h2>
+<ul class="back">
+    <li>All HTML elements can have <b>attributes</b></li>
+    <li>Attributes provide <b>additional information</b> about an element</li>
+    <li>Attributes are always specified in <b>the start tag</b></li>
+    <li>Attributes usually come in name/value pairs like: <b>name=&quot;value&quot;</b></li>
+</ul>
+<hr>
+<h2>The href Attribute</h2>
+<p>HTML links are defined with the <code >&lt;a&gt;</code> tag. The link address is specified in the <code >href</code> attribute:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="back">
+        &lt;a href=&quot;https://www.Web tutorials.com&quot;&gt;This is a link&lt;/a&gt;
+    </div>
+</div>
+<p>You will learn more about links and the <code >&lt;a&gt;</code> tag later in this tutorial.</p>
+<hr>
+<h2>The src Attribute</h2>
+<p>HTML images are defined with the <code >&lt;img&gt;</code> tag.</p>
+<p>The filename of the image source is specified in the <code >src</code> attribute:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="back">
+        &lt;img src=&quot;img_girl.jpg&quot;&gt;
+    </div>
+</div>
+<hr>
+<h2>The width and height Attributes</h2>
+<p>Images in HTML have a set of <strong>size</strong> attributes, which specifies the width and
+    height of the image:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="back">
+        &lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;
+    </div>
+</div>
+<p>The image size is specified in pixels: width=&quot;500&quot; means 500 pixels wide.</p>
+<p>You will learn more about images in our <a href="#">HTML Images
+    chapter</a>.</p>
+<hr>
+
+<h2>The alt Attribute</h2>
+<p>The <code >alt</code> attribute specifies an alternative text to be used, when an
+    image cannot be displayed.</p>
+<p>The value of the attribute can be read by screen readers. This way, someone &quot;listening&quot;
+    to the webpage, e.g. a vision impaired person, can &quot;hear&quot; the element.</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="back">
+        &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl
+        with a jacket&quot;&gt;
+    </div>
+</div>
+
+<div class="w3-panel w3-note">
+    <p>The <code >alt</code> attribute is also useful if the image does not exist:</p>
+</div>
+<div class="w3-example">
+    <h3>Example</h3>
+    <p>See what happens if we try to display an image that does not exist:</p>
+    <div class="back">
+        &lt;img src=&quot;img_typo.jpg&quot; alt=&quot;Girl
+        with a jacket&quot;&gt;
+    </div>
+</div>
+<hr>
+<h2>The style Attribute</h2>
+<p>The <code >style</code> attribute is used to specify the styling of an element, like color,
+    font, size etc.</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="back">
+        &lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;
+    </div>
+
+</div>
+<hr>
+
+<h2>The lang Attribute</h2>
+<p>The language of the document can be declared in the <code >&lt;html&gt;</code> tag.</p>
+<p>The language is declared with the <code >lang</code> attribute.</p>
+<p>Declaring a language is important for accessibility applications (screen readers) and search engines:</p>
+<div class="w3-example">
+    <div class="back">
+        &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en-US&quot;&gt;<br>&lt;body&gt;<br><br>
+        ...<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+    </div>
+</div>
+<p>The first two letters specify the language (en). If there is a dialect, use two more letters (US).</p>
+<hr>
+
+<h2>The title Attribute</h2>
+<p>Here, a <code >title</code> attribute is added to the <code >&lt;p&gt;</code>
+    element.
+    The value of the title attribute will be displayed as a tooltip when
+    you mouse over the paragraph:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="back">
+        &lt;p title="I'm a tooltip"&gt;<br>This is a paragraph.<br>&lt;/p&gt;
+    </div>
+    Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>We Suggest: Use Lowercase Attributes</h2>
+<p>The HTML5 standard does not require lowercase attribute names.</p>
+<p>The title attribute can be written with uppercase or lowercase
+    like <strong>title</strong> or <strong>TITLE</strong>.</p>
+<p>WT <strong>recommends</strong> lowercase in HTML, and <strong>demands</strong>
+    lowercase for stricter document types like XHTML.</p>
+<div class="w3-panel w3-note">
+    <p>At Web tutorials we always use lowercase attribute names.</p>
+</div>
+<hr>
+
+<h2>We Suggest: Quote Attribute Values</h2>
+<p>The HTML5 standard does not require quotes around attribute values.</p>
+<p>The <code >href</code> attribute, demonstrated above, <em>can</em> be written without quotes:</p>
+
+<div class="w3-row-padding" style="margin:-8px -16px">
+
+   
+</div>
+<p>WT <b>recommends</b> quotes in HTML, and <strong>demands</strong> quotes for stricter document types like XHTML.</p>
+<p>Sometimes it is <strong>necessary</strong> to use quotes. This example will not display
+    the title attribute correctly, because it contains a space:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="w3-code notranslate htmlHigh">
+        &lt;p
+        title=About Web tutorials&gt;</div>
+</div>
+<div class="w3-panel w3-note">
+    <p>Using quotes are the most common. Omitting quotes can produce errors.
+        <br>At Web tutorials we <strong>always</strong> use quotes around attribute values.</p>
+</div>
+<hr>
+
+<h2>Single or Double Quotes?</h2>
+<p>Double quotes around attribute values are the most common in HTML, but single
+    quotes can also be used.</p>
+<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+<div class="w3-example">
+    <div class="back">
+        &lt;p title='John &quot;ShotGun&quot; Nelson'&gt;
+    </div>
+</div>
+
+<p>Or vice versa:</p>
+
+<div class="w3-example">
+    <div class="back">
+        &lt;p title=&quot;John 'ShotGun' Nelson&quot;&gt;</div>
+    </div>
+<hr>
+
+<h2>Chapter Summary :</h2>
+<ul class="back">
+    <li>All HTML elements can have <strong>attributes</strong></li>
+    <li>The <code >title</code> attribute provides additional &quot;tool-tip&quot;  information</li>
+    <li>The <code >href</code> attribute provides address information for links</li>
+    <li>The <code >width</code> and <code >height</code> attributes provide size information for images</li>
+    <li>The <code >alt</code> attribute provides text for screen readers</li>
+    <li>At Web tutorials we always use <strong>lowercase</strong> attribute names</li>
+    <li>At Web tutorials we always <strong>quote</strong> attribute values with double quotes</li>
+</ul>
+
+</body>
+</html>

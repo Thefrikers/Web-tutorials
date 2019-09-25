@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style</title>
+    <style>
+            body{
+                font-family: DialogInput;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        .heead{
+            color: #7386D5;
+        }
+        .src{
+            background-color: lightskyblue;
+        }
+        xmp{
+            background-color: lightskyblue;
+        }
+        .output{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<h1 class="heead">HTML STYLES</h1>
+<hr>
+<xmp>
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+</xmp>
+
+<h3 class="output">Output :</h3>
+<code>
+    <p>I am normal</p>
+    <p style="color:red;">I am red</p>
+    <p style="color:blue;">I am blue</p>
+    <p style="font-size:50px;">I am big</p>
+</code>
+<p>Style sheets describe how documents are presented on screens, in print, or perhaps how they are pronounced.
+    Wt has actively promoted the use of style sheets on the Web since the Consortium was founded in 1994.
+    Cascading Style Sheets (CSS) is a style sheet mechanism that has been specifically developed to meet the needs of Web designers and users.
+    With CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:).
+    Each property declaration is separated by a semi-colon (;).</p>
+<table class="src" cellpadding="5"><tr><td>
+    &lt;p style="color:red;font-size:24px;"&gt;Using Style Sheet Rules&lt;/p&gt;
+</td></tr></table>
+<p>This will produce following result:</p>
+
+<p style="color:red;font-size:24px;">Using Style Sheet Rules</p>
+
+
+<p><b>There are three ways of using a style sheet in an HTML document:</b></p>
+
+<h1>External Style Sheet:</h1>
+<hr>
+<p>If you have to give same look and feel to many pages then it is a good idea to keep all the style sheet rules in a single style sheet file and include this file in all the HTML pages. You can incluse a style sheet file into HTML document using &lt;link&gt; element. Below is an example:</p>
+<table class="src" cellpadding="5"><tr><td><pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css"
+href="yourstyle.css"&gt;
+&lt;/head&gt;
+</pre></td></tr></table>
+<h1>Internal Style Sheet:</h1>
+<hr>
+<p>If you want to apply Style Sheet rules to a single document only then you can include those rules into that document only. Below is an example:</p>
+<table class="src" cellpadding="5"><tr><td><pre>
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+body{
+    background-color: pink;
+    }
+p{
+    color:blue; 20px;font-size:24px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+</pre></td></tr></table>
+
+<h1>Inline Style Sheet:</h1>
+<hr>
+<p>You can apply style sheet rules directly to any HTML element. This should be done only when you are interested to make a particular change in any HTML element only. To use inline styles you use the style attribute in the relevant tag. Below is an example:</p>
+<table class="src" cellpadding="5"><tr><td>
+    &lt;p style="color:red;font-size:24px;"&gt;Using Style Sheet Rules&lt;/p&gt;
+</td></tr></table>
+<p>This will produce following result:</p>
+
+<p style="color:red;font-size:24px;">Using Style Sheet Rules</p>
+
+<br />
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Id</title>
+    <style>
+        html{
+            font-family: DialogInput;
+            font-size: 15px;
+        }
+        .code{
+            background-color: lightskyblue;
+        }
+        .heead{
+            color: #7386D5;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="heead">HTML Id Attribute</span></h1>
+<hr>
+<h2>Using The id Attribute</h2>
+<p>The <code class="w3-codespan">id</code> attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).</p>
+<p>The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.</p>
+<p>In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:</p>
+
+<div class="w3-example">
+    <h3>Example</h3>
+    <p>Use CSS to style an element with the id "myHeader":</p>
+    <div class="code">
+        &lt;style&gt;<br>
+        <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp;&nbsp;color: black;<br>&nbsp;&nbsp;padding:
+        40px;<br>&nbsp;&nbsp;text-align: center;<br>} <br>&lt;/style&gt;<br>
+        <br>&lt;h1 id=&quot;myHeader&quot;&gt;My Header&lt;/h1&gt;<br></div>
+    <p>Result:</p>
+    <h1 id="myHeader">My Header</h1>
+</div>
+
+
+<div class="w3-panel w3-note">
+    <p><strong>Tip:</strong> The id attribute can be used on <strong>any</strong> HTML element.</p>
+    <p><strong>Note:</strong> The id value is case-sensitive.</p>
+    <p><strong>Note:</strong> The id value must contain at least <strong>one</strong>
+        character, and must <strong>not</strong> contain whitespace (spaces, tabs,
+        etc.).</p>
+</div>
+<hr>
+
+<h2>Difference Between Class and ID</h2>
+<p>An HTML element can only have one unique id that belongs to that single element, while a
+    class name can be used by multiple elements:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="code">
+        &lt;style&gt;<br>/* Style the element with the id "myHeader"
+        */<br>
+        <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp;
+        color: black;<br>&nbsp;&nbsp;padding:
+        40px;<br>&nbsp;&nbsp;text-align: center;<br>}<br><br>/* Style all
+        elements with the class name "city" */<br><strong>.city
+    </strong>{<br>&nbsp; background-color: tomato;<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;padding: 10px;<br>} <br>&lt;/style&gt;<br>
+        <br>&lt;!-- A unique element --&gt;<br>&lt;h1 id=&quot;myHeader&quot;&gt;My
+        Cities&lt;/h1&gt;<br><br>&lt;!-- Multiple similar elements --&gt;<br>&lt;h2 class=&quot;city&quot;&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
+        &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>
+        &lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;<br>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br></div>
+</div>
+
+<h2>Bookmarks with ID and Links</h2>
+<hr>
+<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web
+    page.</p>
+<p>Bookmarks can be useful if your webpage is very long.</p>
+<p>To make a bookmark, you must first create the bookmark, and then add a link
+    to it.</p>
+<p>When the link is clicked, the page will scroll to the location with the
+    bookmark.</p>
+<h2>Example</h2>
+<p>First, create a bookmark with the <code class="w3-codespan">id</code> attribute:</p>
+<div class="w3-example">
+    <div class="code">
+        &lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;</div>
+</div>
+<p>Then, add a link to the bookmark (&quot;Jump to Chapter 4&quot;), from within the same page:</p>
+<div class="w3-example">
+    <div class="code">
+        &lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+    </div>
+</div>
+<p>Or, add a link to the bookmark (&quot;Jump to Chapter 4&quot;), from another page:</p>
+<div class="w3-example">
+    <h3>Example</h3>
+    <div class="code">
+        &lt;a href=&quot;html_demo.html#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+    </div>
+</div>
+<h2>Using The id Attribute in JavaScript</h2>
+<hr>
+<p>JavaScript can access an element with a specified id by using the <code class="w3-codespan">getElementById()</code> method:</p>
+
+<div class="w3-example">
+    <h3>Example</h3>
+    <p>Use the id attribute to manipulate text with JavaScript:</p>
+    <div class="code">
+        &lt;script&gt;<br>function displayResult() {<br>&nbsp;&nbsp;document.getElementById(&quot;myHeader&quot;).innerHTML = &quot;Have a nice day!&quot;;<br>}<br>
+        &lt;/script&gt;</div>
+</div>
+</div>
+</body>
+</html>

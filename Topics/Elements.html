@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elements</title>
+    <style>
+        html{
+            font-family: DialogInput;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .heead{
+            color: #7386D5;;
+        }
+        table{
+            border: 2px solid black;
+            background-color: lightskyblue;
+        }
+        xmp{
+            background-color: lightskyblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 class="heead">HTML Elements</h1>
+    <hr>
+    <p><b>An HTML element usually consists of a <strong>start</strong> tag and <strong>end</strong> tag,
+    with the content inserted in between:</b></p>
+<xmp>
+ <tagname>
+     Content goes here...
+ </tagname>
+</xmp>
+    </div>
+    <p><b>The HTML <strong>element</strong> is everything from the start tag to the end tag:</b></p>
+    <div class="htmlHigh" style="font-size:20px;padding:10px;margin-bottom:10px;">
+<xmp>
+ <p>My first paragraph.</p>
+=</xmp>
+    </div>
+
+<div >
+    <p>HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the &lt;br&gt;
+        element (which indicates a line break).</p>
+</div>
+    <table border="1">
+        <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>My First Heading</td>
+            <td>&lt;/h1&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>My first paragraph.</td>
+            <td>&lt;/p&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+<hr>
+
+<h2>Nested HTML Elements</h2>
+
+<p>HTML elements can be nested (elements can contain elements).</p>
+<p>All HTML documents consist of nested HTML elements.</p>
+<p>This example contains four HTML elements:</p>
+<div>
+    <h3>Example</h3>
+<xmp>
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+
+  </body>
+  </html>
+</xmp>
+   <h3>Example Explained</h3>
+    <ul>
+        <li><p>The <code>&lt;html&gt;</code> element defines the <strong>whole document</strong>.</p></li>
+        <li><p>It has a <strong>start</strong> tag &lt;html&gt; and an <strong>end</strong> tag &lt;/html&gt;.</p></li>
+        <li><p>The element <strong>content</strong> is another HTML element (the <code class="w3-codespan">&lt;body&gt;</code> element).</p></li>
+    </ul>
+        <div class="w3-example">
+<xmp>
+  <html>
+  <body>
+
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+
+  </body>
+  </html>
+</xmp>
+</div>
+<ul>
+    <li><p>The <code class="w3-codespan">&lt;body&gt;</code> element defines the <strong>document body</strong>.</p></li>
+    <li><p>It has a <strong>start</strong> tag &lt;body&gt; and an <strong>end</strong> tag &lt;/body&gt;.</p></li>
+<li><p>The element <strong>content</strong> is two other HTML elements (<code>&lt;h1&gt;</code> and <code class="w3-codespan">
+    &lt;p&gt;</code>).</p></li>
+</ul>
+<div class="w3-example">
+<xmp>
+  <body>
+
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+
+  </body>
+</xmp>
+</div>
+
+<p><li>The <code>&lt;h1&gt;</code> element defines a <strong>heading</strong>.</li></p>
+<p><li>It has a <strong>start</strong> tag &lt;h1&gt; and an
+    <strong>end</strong> tag &lt;/h1&gt;.</li></p>
+<p><li>The element <strong>content</strong> is: My First Heading.</li></p>
+
+<xmp>
+    <h1>My First Heading</h1>
+</xmp>
+
+
+
+<p><li>The <code class="w3-codespan">&lt;p&gt;</code> element defines a <strong>paragraph</strong>.</li></p>
+<p><li>It has a <strong>start</strong> tag &lt;p&gt; and an
+    <strong>end</strong> tag &lt;/p&gt;.</li></p>
+<p><li>The element <strong>content</strong> is: My first paragraph.</li></p>
+<li>&lt;p&gt;My first paragraph.&lt;/p&gt;</li>
+
+
+</ul>
+<hr>
+
+<h2>Do Not Forget the End Tag</h2>
+<p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+<div >
+    <h3>Example</h3>
+<xmp>
+  <html>
+  <body>
+
+   <p>This is a paragraph
+   <p>This is a paragraph
+
+  </body>
+  </html>
+</xmp>
+</div>
+
+<p>The example above works in all browsers, because the closing tag is considered optional. </p>
+<p><strong>Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.</strong></p>
+<hr>
+
+<h3>Empty HTML Elements</h3>
+<p>HTML elements with no content are called empty elements.</p>
+<p><code class="w3-codespan">&lt;br&gt;</code> is an empty element without a closing tag (the <code class="w3-codespan">&lt;br&gt;</code>
+    tag defines a line break):</p>
+<div>
+    <h3>Example</h3>
+<xmp>
+  <p>This is a <br> paragraph with a line break.</p>
+</xmp>
+    <p><b>Empty elements can be &quot;closed&quot; in the opening tag like this: &lt;br /&gt;.</b></p>
+<p><mark>HTML5 does not require empty elements to be closed. But if you want stricter
+    validation, or if you need to make your document readable by XML parsers, you
+    must close all HTML elements properly.</mark></p>
+</div>
+</div>
+</body>
+</html>
